@@ -6,9 +6,9 @@ A simple ConcurrentLinkedQueue implementation using actors
 ```swift
 let queue = ConcurrentLinkedQueue<Int>()
 
-queue.push(1)
+await queue.push(1)
 
-let result = queue.pop()
+let result = await queue.pop()
 
 print(result) // prints 1
 ```
